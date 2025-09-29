@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디지털 포켓몬 도감</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button id="themeToggleBtn"></button>
+
+    <div class="container">
+      <header>
+        <h1>디지털 포켓몬 도감</h1>
+        <div class="subtitle">Pokémon Data Explorer</div>
+      </header>
+
+      <div id="searchContainer">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="번호, 영어 이름 또는 한글 이름 검색"
+        />
+        <button id="searchBtn">🔍 검색</button>
+        <button id="clearBtn">🔄 전체 보기</button>
+      </div>
+
+      <ul id="pokemonList"></ul>
+      <div id="loading">스크롤해서 포켓몬을 불러오세요... 👇</div>
+    </div>
+
+    <div id="modal">
+      <div id="modalContent">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="./src/constants.js"></script>
+    <script src="/src/theme.js"></script>
+    <script src="./src/pokedex.js"></script>
+  </body>
+</html>
